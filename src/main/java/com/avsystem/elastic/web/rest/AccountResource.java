@@ -80,7 +80,7 @@ public class AccountResource {
 
     @PostMapping(path="/submit")
     public ResponseEntity submit(@RequestBody Submit submit) {
-        log.debug(submit.getName() + " favourite franchise is: " + submit.getValue());
+        log.warn(submit.getName() + " favourite franchise is: " + submit.getValue());
         return new ResponseEntity<>(HttpStatus.OK);
 
     }

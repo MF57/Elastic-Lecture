@@ -41,11 +41,11 @@ export class HomeComponent implements OnInit {
         console.log(this.name);
         this.http.post('api/submit', {"name": this.name, "value": this.value}).subscribe(
             result => {
-
+                window.location.href = 'https://9gag.com/random';
             },
             err => console.log(err)
         )
-        //window.location.href = 'https://9gag.com/random';
+        //
     }
 
     select(newValue: string) {
