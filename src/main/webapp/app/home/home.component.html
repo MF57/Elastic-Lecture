@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="form-wrapper">
+
+    </div>
+    <input [(ngModel)]="name" type="text" class="form-control name" id="login" name="login" placeholder="Your Name" required>
+
+    <label>Choose your favourite franchise:</label>
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked (click)="select('Star Wars')">Star Wars</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" (click)="select('MCU')">Marvel Cinematic Universe</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" (click)="select('Harry Potter')">Harry Potter</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" (click)="select('LOTR')">Lord of the Rings</label>
+    </div>
+
+    <button (click)="submit()" type="submit" class="btn btn-primary submit">Submit</button>
+</div>
+
+
